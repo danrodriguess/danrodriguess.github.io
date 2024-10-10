@@ -18,7 +18,7 @@ function parseTxtContent(content) {
 }
 
 function parseDate(dateString) {
-    const data = new Date(dateString);
+    let data = new Date(dateString);
     console.log(data)
     //data.split('T')[0].split('-').reverse().join('/');
     //data = data.split('-');
@@ -50,12 +50,12 @@ function compararProjetos() {
     const demo = parseTxtContent(demoContent);
 
     const projetosWeb4 = web4[Object.keys(web4)[0]].projetos.reduce((map, projeto) => {
-        map[projeto.Projeto] = parseDate(projeto['DATA']);
+        map[projeto.Projeto] = parseDate(projeto['Ultimo Deploy']);
         return map;
     }, {});
 
     const projetosDemo = demo[Object.keys(demo)[0]].projetos.reduce((map, projeto) => {
-        map[projeto.Projeto] = parseDate(projeto['DATA']);
+        map[projeto.Projeto] = parseDate(projeto['Ultimo Deploy']);
         return map;
     }, {});
 
