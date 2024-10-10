@@ -18,19 +18,19 @@ function parseTxtContent(content) {
 }
 
 function parseDate(dateString) {
+    
     console.log(dateString)
-    
-    let data = new Date(dateString);
-    //data.split('T')[0].split('-').reverse().join('/');
-    
-    console.log(data)
-    console.log(data[0])
+    console.log(dateString[0])
+    data.split(' ');
+    console.log(dateString)
+    console.log(dateString[0])
     data.split('-');
-    console.log(data)
-    console.log(data[0])
+    console.log(dateString)
+    console.log(dateString[0])
+    
     //data = data.split('-');
     //data = `${data[2]}/${data[1]}/${data[0]}`;
-    return data;
+    return dateString;
 }
 
 function copyToClipboard(text) {
