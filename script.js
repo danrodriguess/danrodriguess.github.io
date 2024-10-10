@@ -55,7 +55,7 @@ function compararProjetos() {
     }, {});
 
     const projetosDesatualizados = Object.keys(projetosDemo).filter(projeto =>
-        projetosWeb4[projeto] && projetosDemo[projeto] < projetosWeb4[projeto]
+        projetosWeb4[projeto] && projetosDemo[projeto] > projetosWeb4[projeto]
     );
 
     const projetosFront = [];
