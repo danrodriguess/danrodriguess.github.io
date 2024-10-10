@@ -21,8 +21,9 @@ function parseDate(dateString) {
     console.log(dateString)
     dateString = dateString.split(' ')
     console.log(dateString)
-    dateString = dateString.split('-')[0]
+    dateString = dateString[0].split('-')
     console.log(dateString)
+    console.log(dateString[0])
     //dateString = `${dateString[2]}-${dateString[1]}-${dateString[0]}`;
     //console.log(dateString)
 
