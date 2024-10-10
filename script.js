@@ -19,11 +19,10 @@ function parseTxtContent(content) {
 
 function parseDate(dateString) {
     let data = new Date(dateString).toISOString();
-    data.split('T')[0].split('-').reverse().join('/');
+    //data.split('T')[0].split('-').reverse().join('/');
+    data.split('T')[0];
     console.log(data[0])
     console.log(data[1])
-    console.log(data[2])
-    console.log(data[3])
     //data = data.split('-');
     //data = `${data[2]}/${data[1]}/${data[0]}`;
     return data;
