@@ -80,6 +80,10 @@ function compararProjetos() {
     const resultadoUl = document.getElementById('resultado');
     resultadoUl.innerHTML = '';
 
+    const allTitle = document.createElement('h3');
+    allTitle.textContent = `Total de Projetos(${(projetosBack.length + projetosFront.length)})`;
+        resultadoUl.appendChild(allTitle);
+
     // Adiciona título e projetos de back
     if (projetosBack.length > 0) {
         const backTitle = document.createElement('h3');
