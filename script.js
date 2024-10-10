@@ -21,6 +21,7 @@ function parseDate(dateString) {
     return dateString;
 }
 
+
 function copyToClipboard(text) {
     const textarea = document.createElement('textarea');
     textarea.value = text;
