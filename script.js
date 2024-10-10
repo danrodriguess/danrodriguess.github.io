@@ -19,9 +19,9 @@ function parseTxtContent(content) {
 
 function parseDate(dateString) {
     console.log(dateString)
-    dateString.split(' ')
+    dateString = dateString.split(' ')[0]
     console.log(dateString)
-    dateString.split('-')
+    dateString = dateString.split('-')
     console.log(dateString)
     //dateString = `${dateString[2]}-${dateString[1]}-${dateString[0]}`;
     //console.log(dateString)
