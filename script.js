@@ -17,19 +17,15 @@ function parseTxtContent(content) {
     return result;
 }
 
-function parseDate(dateString) {
-    console.log(dateString)
-    dateString = dateString.split(' ')
-    console.log(dateString)
-    dateString1 = dateString[0].split('-')
-    console.log(dateString1)
-    dateString = `${dateString1[2]}-${dateString1[1]}-${dateString1[0]} ${dateString[1]}`;
-    console.log('data certa: ' + dateString)
+function convertDate(date) {
+    date = date.split(' ')
+    date1 = date[0].split('-')
+    date = `${date1[2]}-${date1[1]}-${date1[0]} ${date[1]}`;
+    return date;
+}
 
-    const data = new Date(dateString)
-    console.log(data)
-    //console.log('28-08-2024 12:37:41' < '08-10-2024 16:41:46')
-    return dateString;
+function parseDate(dateString) {
+    return new Date(convertDate(dateString));
 }
 
 function copyToClipboard(text) {
