@@ -21,13 +21,13 @@ function parseDate(dateString) {
     console.log(dateString)
     dateString = dateString.split(' ')
     console.log(dateString)
-    dateString = `${dateString[0].split('-')} ${dateString[1]}`
-    console.log(dateString)
-    //dateString = `${dateString[2]}-${dateString[1]}-${dateString[0]}`;
-    //console.log(dateString)
+    dateString1 = dateString[0].split('-')
+    console.log(dateString1)
+    dateString = `${dateString1[2]}-${dateString1[1]}-${dateString1[0]} ${dateString[1]}`;
+    console.log('data certa: ' + dateString)
 
     const data = new Date(dateString)
-    //console.log(data)
+    console.log(data)
     //console.log('28-08-2024 12:37:41' < '08-10-2024 16:41:46')
     return dateString;
 }
