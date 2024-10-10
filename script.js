@@ -18,10 +18,17 @@ function parseTxtContent(content) {
 }
 
 function parseDate(dateString) {
+    console.log(dateString)
+    dateString.split(' ')[0]
+    console.log(dateString)
+    dateString.split('-')
+    console.log(dateString)
+    dateString = `${dateString[2]}-${dateString[1]}-${dateString[0]}`;
+    console.log(dateString)
 
     const data = new Date(dateString)
-    console.log(data)
-    console.log('28-08-2024 12:37:41' < '08-10-2024 16:41:46')
+    //console.log(data)
+    //console.log('28-08-2024 12:37:41' < '08-10-2024 16:41:46')
     return dateString;
 }
 
